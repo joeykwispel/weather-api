@@ -1,0 +1,165 @@
+html {
+  margin: 0;
+  background-image: url("../img/beach-coast-coconut-trees-221471-jpg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.main {
+  background-color: rgba(160, 160, 160, 0.5);
+  color: white;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+}
+
+.main__form {
+  width: 40%;
+  display: none;
+}
+
+.main__img {
+  width: 100px;
+  margin: 20px;
+}
+
+.main__search {
+  width: 10%;
+  height: 60px;
+  padding: 5px;
+  border-radius: 30px 0px 0px 30px;
+  border: 2px white solid;
+  margin-left: 2%;
+  margin-top: 2%;
+  position: absolute;
+}
+
+.main__button {
+  position: absolute;
+  border-radius: 0px 30px 30px 0px;
+  background-color: rgba(90, 17, 17, 0.1);
+  border: 2px white solid;
+  color: white;
+  height: 60px;
+  margin-left: 12%;
+  margin-top: 2%;
+}
+
+.main a {
+  color: white;
+}
+
+.main__add {
+  width: 4%;
+  margin-top: 30px;
+  background-color: transparent;
+  border: 2px white solid;
+  color: white;
+  border-radius: 50px;
+  margin-left: 2%;
+  text-decoration: none;
+  font-size: 60px;
+}
+
+.main__delete {
+  margin-left: 92%;
+  margin-top: -2.5%;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+.main__title {
+  margin-left: 40%;
+  font-size: 70px;
+}
+
+.main__text {
+  margin-left: 44.5%;
+  min-width: 10%;
+  font-size: 25px;
+}
+
+.box__title {
+  margin-top: 30px;
+}
+
+.box__delete {
+  background-color: transparent;
+  border: 1px transparent solid;
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.weather-container {
+  background-color: rgba(160, 160, 160, 0.5);
+  border-radius: 0px 0px 5px 5px;
+  padding: 20px;
+  width: auto;
+  min-height: 650px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  text-align: center;
+}
+
+.weather-container__box {
+  border: 1px #333 solid;
+  margin: 2%;
+  width: 16%;
+  height: 500px;
+  background-color: white;
+  border-radius: 30px;
+}
+
+.weather-location {
+  background-color: rgba(160, 160, 160, 0.5);
+  border-radius: 0px 0px 5px 5px;
+  padding: 20px;
+  width: auto;
+  min-height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  text-align: center;
+}
+
+.weather-location--container {
+  background-color: white;
+  height: 300px;
+  width: 76%;
+  border: 1px #333 solid;
+  background-color: white;
+  border-radius: 30px;
+}
+
+.weather-location__city {
+  font-size: 50px;
+}
+
+.weather-location__temp {
+  width: 50%;
+  font-size: 30px;
+}
+
+.weather-location__clouds {
+  width: 50%;
+  float: right;
+  font-size: 30px;
+}
+/*# sourceMappingURL=main.css.map */

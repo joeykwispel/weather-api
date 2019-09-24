@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <title>weather API</title>
+    <link rel="shortcut icon" type="image/x-icon" href="https://emoji.slack-edge.com/T6PB4FE10/fu/bbeacbcb0d0c3485.png">
+    <link rel="stylesheet" href="/src/scss/normalize.css">
+    <link rel="stylesheet" href="/src/scss/main.css">
+</head>
+
+<body>
+    <main class="main">
+        <div class="main__form">
+            <input type="text" placeholder="Enter City Name" class="main__search">
+            <button class="main__button" type="submit">Send</button>
+        </div>
+        <input class="main__add" value="+" type="button">
+        <a class="main__delete" href="#">Delete all</a>
+        <h1 class="main__title">weather api</h1>
+        <p class="main__text">kies hier uw steden</p>
+    </main>
+    <section class="weather-location">
+        <div class="weather-location--container">
+            <h2 class="weather-location__city"></h2>
+            <p class="weather-location__temp"></p>
+            <p class="weather-location__clouds"></p>
+    </section>
+    <section class="weather-container">
+        <div class="weather-container__box weather-container--left">
+            <input type="button" class="box__delete" value="X">
+            <h2 class="box__title">Rijswijk</h2>
+            <img class="main__img"
+                src="http://www.myiconfinder.com/uploads/iconsets/256-256-98e2a448aca3310dfd045e443106efba-weather.png"
+                alt="img">
+            <p class="box__temp">temperatuur: 21°C</p>
+            <p class="box__clouds">Bewolkt</p>
+        </div>
+        <div class="weather-container__box"></div>
+    </section>
+</body>
+<script src="/src/javascript/weather.js"></script>
+
+</html>
