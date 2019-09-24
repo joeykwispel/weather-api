@@ -75,16 +75,18 @@ function drawWeather( d ) {
 }
 
 function drawWeatherBox( d ) {
-  for(i = 0; i < localStorage.length; i++){
-    // let maindiv = document.querySelector(".weather-container");
-
-    // maindiv.appendChild()
-
-  document.querySelector(".weather-container").innerHTML +=
-  "<div class=weather-container__box> <input type=button class=box__delete value=X> <h2 class=box__title> </h2> <p class=box__temp></p> <p class=box__clouds></p> </div>";
-  let celcius = Math.round(parseFloat(d.main.temp)-273.15);  
-  document.querySelector(".box__clouds").innerHTML = d.weather[0].description;
-  document.querySelector(".box__temp").innerHTML = 'Temperatuur: ' + celcius + '&deg;';
-  document.querySelector(".box__title").innerHTML = d.name;
+  for (i = 0; i < localStorage.length; i++) {
+    let currentI = localStorage.getItem(localStorage.key(i));
+    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${currentI}&appid=${key}`).then(result => {
+        return result.json();
+    }).then(result => {
+        fetchResult = result;
+        document.querySelector(".weather-container").innerHTML += 
+        "<div class=weather-container__box> <input type=button class=box__delete value=X> <h2 class=box__title> </h2> <p class=box__temp></p> <p class=box__clouds></p> </div>";
+        let celcius = Math.round(parseFloat(d.main.temp)-273.15);  
+        document.querySelector(".box__clouds").innerHTML = d.weather[0].description;
+        document.querySelector(".box__temp").innerHTML = 'Temperatuur: ' + celcius + '&deg;';
+        document.querySelector(".box__title").innerHTML = d.name;
+    })
   }
 }
