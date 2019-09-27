@@ -34,6 +34,7 @@ html {
   margin-left: 2%;
   margin-top: 2%;
   position: absolute;
+  text-transform: lowercase;
 }
 
 .main__button {
